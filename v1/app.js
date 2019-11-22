@@ -19,7 +19,7 @@ app.get("/campgrounds", function(req, res){
     {name:"Varun Shravan", image:"https://pixabay.com/get/57e6d7454e53ae14f6da8c7dda793f7f1636dfe2564c704c722b78dd924ccc5a_340.jpg"},
     {name:"Shravan Varun", image:"https://pixabay.com/get/57e8dc414e5ba814f6da8c7dda793f7f1636dfe2564c704c722b78dd924ccc5a_340.jpg"}
   ]
-  res.render("campgrounds");
+  res.render("campgrounds", {campgrounds:campgrounds});
 });
 
 
